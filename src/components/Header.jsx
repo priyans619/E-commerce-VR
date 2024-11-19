@@ -114,7 +114,31 @@ const Header = () => {
           <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
         </button>
 
-        
+        {/* Wrapper for List  */}
+        <div className="flex items-center space-x-6"> 
+          {/* title and globe icon */}
+          <div className="flex items-center space-x-6">
+            <span className="text-sm text-[#F1F1F1] font-bold ml-44">List your creation</span>
+            <button className="flex items-center justify-center text-gray-600">
+              <CiGlobe className="text-[#F1F1F1] text-lg" />
+            </button>
+          </div>
+
+          {/* menu and account */}
+          <div className="flex items-center space-x-1 px-2 py-1 border border-gray-300 rounded-full">
+            <button className="flex items-center justify-center h-8 w-8 rounded-full">
+              <IoMdMenu className="text-[#F1F1F1] text-3xl" />
+            </button>
+            <button className="flex items-center justify-center  h-8 w-8 rounded-full">
+              <MdAccountCircle className="text-[#F1F1F1] text-3xl" />
+            </button>
+          </div>
+
+          {/* cart Icon */}
+          <button className="flex items-center justify-center border border-gray-300 text-gray-600 h-10 w-10 rounded-full">
+            <FiShoppingCart className="text-[#F1F1F1] text-2xl" />
+          </button>
+        </div>
       </div>
     </nav>
   );
