@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
+import { CiGlobe } from "react-icons/ci"; 
+import { IoMdMenu } from "react-icons/io";
+import { MdAccountCircle } from "react-icons/md";
 
 const Header = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -105,6 +109,12 @@ const Header = () => {
           </button>
         </div>
 
+        {/* Filter Icon */}
+        <button className="flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
+          <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
+        </button>
+
+        
       </div>
     </nav>
   );
