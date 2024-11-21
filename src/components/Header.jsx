@@ -17,8 +17,8 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
 
   return (
     <nav className="bg-[black] p-4 border-b border-gray-300 flex flex-col lg:flex-row justify-between items-center mx-auto">
-      {/* Logo Section - Hidden on screens less than 1024px */}
-      <div className="flex items-center text-white lg:flex md:hidden sm:hidden">
+      {/* Logo Section*/}
+      <div className="hidden lg:flex items-center text-white">
         <h1>Test Logo</h1>
       </div>
 
@@ -107,7 +107,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
           </div>
 
           {/* Search Icon */}
-          <button className="flex items-center justify-center bg-red-500 text-gray-600 h-10 w-10 rounded-full hover:bg-gray-400">
+          <button className="flex items-center justify-center bg-[#CA323D] text-gray-600 h-10 w-10 rounded-full mr-1">
             <FiSearch className="text-[#F1F1F1] text-2xl" />
           </button>
         </div>
@@ -119,7 +119,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
       </div>
 
       {/* Wrapper List Section*/}
-      <div className="flex items-center space-x-4 md:space-x-3 mr-4 mt-4 lg:mt-0 lg:order-1 xm:hidden">
+      <div className="hidden sm:flex lg:flex items-center space-x-4 md:space-x-3 mr-4 mt-4 lg:mt-0 lg:order-1">
         {/* Title and Globe Icon */}
         <div className="flex items-center space-x-6">
           <span className="text-sm text-[#F1F1F1] font-bold">
