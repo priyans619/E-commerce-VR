@@ -16,14 +16,14 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
   };
 
   return (
-    <nav className="bg-[black] p-4 border-b border-gray-300 flex justify-between items-center mx-auto">
-      {/* Logo Section */}
-      <div className="flex items-center text-white">
+    <nav className="bg-[black] p-4 border-b border-gray-300 flex flex-col lg:flex-row justify-between items-center mx-auto">
+      {/* Logo Section - Hidden on screens less than 1024px */}
+      <div className="flex items-center text-white lg:flex md:hidden sm:hidden">
         <h1>Test Logo</h1>
       </div>
 
       {/* Search Bar Section */}
-      <div className="flex items-center space-x-4 w-full max-w-xl">
+      <div className="flex md:flex-row lg:flex-row items-center space-x-4 w-full max-w-xl">
         <div className="relative flex items-center h-12 bg-gray-300 border border-gray-300 rounded-full py-1 w-full">
           {/* Keyword Input */}
           <input
@@ -50,7 +50,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
 
             {/* Popup */}
             {showPopup && (
-              <div className="absolute top-full mt-8 w-[400px] bg-[#443E3E] shadow-lg rounded-3xl border border-gray-300 z-10">
+              <div className="absolute top-full mt-6 w-[400px] bg-[#443E3E] shadow-lg rounded-3xl border border-gray-300 mr-2 z-10">
                 <div className="flex h-80 p-3">
                   {/* Main Categories */}
                   <ul className="w-1/2 border-r border-gray-300 text-[#F1F1F1]">
@@ -113,13 +113,13 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
         </div>
 
         {/* Filter Icon */}
-        <button className="flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
+        <button className="flex items-center justify-center border  border-gray-300 h-10 w-10 rounded-full ml-2">
           <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
         </button>
       </div>
 
-      {/* Wrapper List Section */}
-      <div className="flex items-center space-x-8 mr-4">
+      {/* Wrapper List Section*/}
+      <div className="flex items-center space-x-4 md:space-x-3 mr-4 mt-4 lg:mt-0 lg:order-1 xm:hidden">
         {/* Title and Globe Icon */}
         <div className="flex items-center space-x-6">
           <span className="text-sm text-[#F1F1F1] font-bold">
