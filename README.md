@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# React + Vite
 
-## Getting Started
+## Technologies
+1.**Next.Js** (Frontend framework)
 
-First, run the development server:
+2.**API**'s:
+   a) ***Custom API*** 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3.**Libraries**:
+   a) **UI kit**- **TailwindCss** (You can choose any Material UI or tailwind)
+   
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## System Requirements
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To get started with development, you need to install few tools
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. **git** 
+   
+   `git` version 2.40.0 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+   To check your version of git, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```shell
+    git --version
+   ```
+2. **node** 
 
-## Learn More
+   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
 
-To learn more about Next.js, take a look at the following resources:
+    To check your version of node, run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+    ```shell
+    node --version
+    ```
+3. **npm**
+  
+    `npm` version 9.5.0 or higher. You will have it after you install node.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    To check your version of npm, run:
 
-## Deploy on Vercel
+     ```shell
+     npm --version
+     ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Setup
+To set up a development environment locally, please follow these steps:
+
+1. Clone the repo
+
+   ```shell
+    git clone https://github.com/priyans619/E-commerce-VR
+   ```
+
+2. Change directory to the project directory
+
+    ```shell
+    cd E-commerce-VR
+    ```
+
+3. Install the dependencies
+   
+     ```shell
+     npm install
+      ```
+4. Run the app
+   
+    ```shell
+    npm run dev
+    ```
+
+    ```
+
+### Thank You !!!
