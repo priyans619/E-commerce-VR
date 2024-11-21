@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "/.*",
+      "headers": {
+        "WWW-Authenticate": "Basic realm='Protected Area'",
+        "Authorization": "Basic YWRtaW46ZmVkZXYyMDI0dGVzdA=="
+      },
+      "dest": "/",
+      "methods": ["GET", "POST"]
+    }
+  ]
+}
