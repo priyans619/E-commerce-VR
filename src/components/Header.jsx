@@ -124,7 +124,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
         </button>
 
         {/*Filter Icon */}
-        <button className="hidden sm:flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
+        <button className="hidden sm:flex items-center justify-center border border-gray-300 h-11 w-12 rounded-full ml-2">
           <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
         </button>
       </div>
