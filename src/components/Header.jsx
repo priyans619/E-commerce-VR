@@ -117,14 +117,14 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
 
         {/* for mobile: Menu Icon */}
         <button
-          className="flex items-center justify-center border border-gray-300 h-10 w-12 rounded-full ml-2 md:hidden"
+          className="flex items-center justify-center border border-gray-300 h-11 w-12 rounded-full ml-2 sm:hidden"
           onClick={() => setShowSidebar(true)}
         >
           <IoMdMenu className="text-[#F1F1F1] text-2xl" />
         </button>
 
         {/*Filter Icon */}
-        <button className="hidden md:flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
+        <button className="hidden sm:flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
           <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
         </button>
       </div>
