@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import { FiSearch, FiShoppingCart} from "react-icons/fi";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
-import { CiGlobe } from "react-icons/ci"; 
+import { CiGlobe } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import { MdAccountCircle } from "react-icons/md";
 
-const Header = () => {
+const Header = ({ onCategorySelect, onSubCategorySelect }) => {
   const [showPopup, setShowPopup] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState(""); 
-  const [selectedSubCategory, setSelectedSubCategory] = useState(""); 
+  const [currentMenu, setCurrentMenu] = useState("");
+  const [selectedSubCategory, setSelectedSubCategory] = useState("");
 
   const categories = {
     Avatars: ["Human-like", "Anthro & Furry", "Robot & Cyborgs", "Cyborgs", "All in Avatars"],
-    Fashion: ["Clothes", "Accessories", "Others", "All in Avatars"],
+    Fashion: ["Clothes", "Accessories", "Others", "All in Fashion"],
   };
 
   return (
@@ -63,7 +63,8 @@ const Header = () => {
                         onClick={() => {
                           if (category === "All") {
                             // Handle "All" category selection
-                            setSelectedSubCategory("All");
+                            onCategorySelect("All");
+                            setSelectedSubCategory("");
                             setCurrentMenu("");
                             setShowPopup(false);
                           } else {
@@ -91,6 +92,8 @@ const Header = () => {
                           }`}
                           onClick={() => {
                             setSelectedSubCategory(subCategory);
+                            onCategorySelect(currentMenu);
+                            onSubCategorySelect(subCategory);
                             setShowPopup(false);
                           }}
                         >
@@ -115,10 +118,12 @@ const Header = () => {
         </button>
 
         {/* Wrapper for List  */}
-        <div className="flex items-center space-x-6"> 
+        <div className="flex items-center space-x-6">
           {/* title and globe icon */}
           <div className="flex items-center space-x-6">
-            <span className="text-sm text-[#F1F1F1] font-bold ml-44">List your creation</span>
+            <span className="text-sm text-[#F1F1F1] font-bold ml-44">
+              List your creation
+            </span>
             <button className="flex items-center justify-center text-gray-600">
               <CiGlobe className="text-[#F1F1F1] text-lg" />
             </button>
