@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import products from "../data/products.json";
 
 const ProductGrid = ({ selectedCategory, selectedSubCategory }) => {
-  // Filter products based on selected category and subcategory
+  // Filtring the products based on selected category and subcategory
   const filteredProducts = products.filter((product) => {
     const categoryMatch =
       !selectedCategory || selectedCategory === "All" || product.category === selectedCategory;
@@ -15,7 +15,7 @@ const ProductGrid = ({ selectedCategory, selectedSubCategory }) => {
   });
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-6">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 p-6 bg-black min-h-screen">
       {filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
