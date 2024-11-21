@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiSearch, FiShoppingCart} from "react-icons/fi";
+import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { CiGlobe } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
@@ -16,15 +16,15 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
   };
 
   return (
-    <nav className="bg-[black] p-4 border-b border-gray-300 flex justify-start items-center mx-auto">
-      {/* Left side icons */}
-      <div className="flex items-center space-x-4 text-white">
+    <nav className="bg-[black] p-4 border-b border-gray-300 flex justify-between items-center mx-auto">
+      {/* Logo Section */}
+      <div className="flex items-center text-white">
         <h1>Test Logo</h1>
       </div>
 
-      <div className="flex items-center space-x-4 ml-auto w-full max-w-6xl">
-        {/* Search Bar */}
-        <div className="relative flex items-center h-12 bg-gray-300 border border-gray-300 rounded-full py-1 w-full max-w-md">
+      {/* Search Bar Section */}
+      <div className="flex items-center space-x-4 w-full max-w-xl">
+        <div className="relative flex items-center h-12 bg-gray-300 border border-gray-300 rounded-full py-1 w-full">
           {/* Keyword Input */}
           <input
             type="text"
@@ -116,34 +116,34 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
         <button className="flex items-center justify-center border border-gray-300 h-10 w-10 rounded-full ml-2">
           <HiOutlineAdjustmentsHorizontal className="text-[#F1F1F1] text-3xl" />
         </button>
+      </div>
 
-        {/* Wrapper for List  */}
+      {/* Wrapper List Section */}
+      <div className="flex items-center space-x-8 mr-4">
+        {/* Title and Globe Icon */}
         <div className="flex items-center space-x-6">
-          {/* title and globe icon */}
-          <div className="flex items-center space-x-6">
-            <span className="text-sm text-[#F1F1F1] font-bold ml-44">
-              List your creation
-            </span>
-            <button className="flex items-center justify-center text-gray-600">
-              <CiGlobe className="text-[#F1F1F1] text-lg" />
-            </button>
-          </div>
-
-          {/* menu and account */}
-          <div className="flex items-center space-x-1 px-2 py-1 border border-gray-300 rounded-full">
-            <button className="flex items-center justify-center h-8 w-8 rounded-full">
-              <IoMdMenu className="text-[#F1F1F1] text-3xl" />
-            </button>
-            <button className="flex items-center justify-center  h-8 w-8 rounded-full">
-              <MdAccountCircle className="text-[#F1F1F1] text-3xl" />
-            </button>
-          </div>
-
-          {/* cart Icon */}
-          <button className="flex items-center justify-center border border-gray-300 text-gray-600 h-10 w-10 rounded-full">
-            <FiShoppingCart className="text-[#F1F1F1] text-2xl" />
+          <span className="text-sm text-[#F1F1F1] font-bold">
+            List your creation
+          </span>
+          <button className="flex items-center justify-center text-gray-600">
+            <CiGlobe className="text-[#F1F1F1] text-lg" />
           </button>
         </div>
+
+        {/* Menu and Account */}
+        <div className="flex items-center space-x-1 px-2 py-1 border border-gray-300 rounded-full">
+          <button className="flex items-center justify-center h-8 w-8 rounded-full">
+            <IoMdMenu className="text-[#F1F1F1] text-3xl" />
+          </button>
+          <button className="flex items-center justify-center h-8 w-8 rounded-full">
+            <MdAccountCircle className="text-[#F1F1F1] text-3xl" />
+          </button>
+        </div>
+
+        {/* Cart Icon */}
+        <button className="flex items-center justify-center border border-gray-300 text-gray-600 h-10 w-10 rounded-full">
+          <FiShoppingCart className="text-[#F1F1F1] text-2xl" />
+        </button>
       </div>
     </nav>
   );
