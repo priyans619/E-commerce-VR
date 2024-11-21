@@ -8,12 +8,13 @@ export default function Home() {
 
   return (
     <div>
-      {/* Pass data to header */}
+      {/* Pass state setters to Header */}
       <Header
         onCategorySelect={setSelectedCategory}
         onSubCategorySelect={setSelectedSubCategory}
       />
 
+      {/* Pass selected category and subcategory to ProductGrid */}
       <ProductGrid
         selectedCategory={selectedCategory}
         selectedSubCategory={selectedSubCategory}
