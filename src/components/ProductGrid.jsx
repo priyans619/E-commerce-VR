@@ -3,13 +3,17 @@ import ProductCard from "./ProductCard";
 import products from "../data/products.json";
 
 const ProductGrid = ({ selectedCategory, selectedSubCategory }) => {
-  // Filtring the products based on selected category and subcategory
+  // Filtering the products based on selected category and subcategory
   const filteredProducts = products.filter((product) => {
     const categoryMatch =
       !selectedCategory || selectedCategory === "All" || product.category === selectedCategory;
 
-    const subCategoryMatch =
-      !selectedSubCategory || selectedCategory === "All" || product.subCategory === selectedSubCategory;
+    const subCategoryMatch = 
+      !selectedSubCategory ||
+      selectedSubCategory === "All" || //showing all subcategories in selected category
+      selectedSubCategory === "All in Avatars" ||
+      selectedSubCategory === "All in Fashion" ||
+      product.subCategory === selectedSubCategory;
 
     return categoryMatch && subCategoryMatch;
   });
