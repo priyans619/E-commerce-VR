@@ -4,6 +4,7 @@ import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { CiGlobe } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import { MdAccountCircle } from "react-icons/md";
+import Image from 'next/image'
 
 const Header = ({ onCategorySelect, onSubCategorySelect }) => {
   const [showPopup, setShowPopup] = useState(false);
@@ -18,8 +19,8 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
   return (
     <nav className="bg-[black] p-4 border-b border-gray-300 flex flex-col lg:flex-row justify-between items-center mx-auto">
       {/* Logo Section*/}
-      <div className="hidden lg:flex items-center text-white">
-        <h1>Test Logo</h1>
+      <div className="hidden lg:flex items-center ml-8">
+        <Image src="/logo.png" alt="Logo" width={150} height={40} />
       </div>
 
       {/* Search Bar Section */}
@@ -57,9 +58,8 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
                     {["Avatars", "Fashion", "All"].map((category) => (
                       <li
                         key={category}
-                        className={`px-5 py-2 rounded-3xl flex justify-between items-center cursor-pointer ${
-                          currentMenu === category ? "bg-[#655D5E]" : ""
-                        }`}
+                        className={`px-5 py-2 rounded-3xl flex justify-between items-center cursor-pointer ${currentMenu === category ? "bg-[#655D5E]" : ""
+                          }`}
                         onClick={() => {
                           if (category === "All") {
                             // Handle "All" category selection
@@ -87,9 +87,8 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
                       categories[currentMenu]?.map((subCategory) => (
                         <li
                           key={subCategory}
-                          className={`px-5 py-2 rounded-3xl cursor-pointer text-[#F1F1F1] ${
-                            selectedSubCategory === subCategory ? "bg-[#655D5E]" : ""
-                          }`}
+                          className={`px-5 py-2 rounded-3xl cursor-pointer text-[#F1F1F1] ${selectedSubCategory === subCategory ? "bg-[#655D5E]" : ""
+                            }`}
                           onClick={() => {
                             setSelectedSubCategory(subCategory);
                             onCategorySelect(currentMenu);
@@ -121,7 +120,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
       {/* Wrapper List Section*/}
       <div className="hidden sm:flex lg:flex items-center space-x-4 md:space-x-3 mr-4 mt-4 lg:mt-0 lg:order-1">
         {/* Title and Globe Icon */}
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-8">
           <span className="text-sm text-[#F1F1F1] font-bold">
             List your creation
           </span>
