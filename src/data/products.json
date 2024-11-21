@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "category": "Avatars",
+    "subCategory": "Human-Like",
+    "name": "Human Avatar 1",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqLyXhSmaWY2U2xPnTuqtuMvO9YWzzx04kQ&s",
+    "creator": "Tensor Art",
+    "ratings": 4.2,
+    "price": 230
+  },
+  {
+    "id": 2,
+    "category": "Avatars",
+    "subCategory": "Human-Like",
+    "name": "Human Avatar 2",
+    "image":"https://image.tensorartassets.com/cdn-cgi/image/anim=true,plain=false,w=2048,f=jpeg,q=85/posts/images/620162418475231055/1c75597a-4910-4d8c-85da-2c7928412cc5.jpg",
+    "creator": "BlueSky",
+    "ratings": 4.1,
+    "price": 950
+  },
+  {
+    "id": 3,
+    "category": "Avatars",
+    "subCategory": "Human-Like",
+    "name": "Human Avatar 3",
+    "image":"https://image.tensorartassets.com/posts/images/620162418475231055/071d8518-ccc2-42ee-82f1-3315a880e515.jpg",
+    "creator": "AvatarMaker Pro",
+    "ratings": 4.9,
+    "price": 250
+  },
+  {
+    "id": 4,
+    "category": "Avatars",
+    "subCategory": "Anthro & Furry",
+    "name": "Leonian V1",
+    "image":"https://public-files.gumroad.com/4dmo5ut2cy4c60dqo0x4m9q4yqg3",
+    "creator": "FurCreations",
+    "ratings": 4.2,
+    "price": 400
+  },
+  {
+    "id": 5,
+    "category": "Avatars",
+    "subCategory": "Anthro & Furry",
+    "name": "Jenna",
+    "image":"https://cdnb.artstation.com/p/assets/images/images/070/447/951/large/michael-collins-399614940-1558629394673693-7515721177687960894-n.jpg?1702552190",
+    "creator": "Art Station",
+    "ratings": 4.4,
+    "price": 300
+  },
+  {
+    "id": 6,
+    "category": "Avatars",
+    "subCategory": "Anthro & Furry",
+    "name": "Huxley",
+    "image":"https://staging.cohostcdn.org/attachment/50aaf457-d1c8-48ca-b4e3-7cbbe0baf795/Huxley.jpg?width=675&auto=webp&dpr=1",
+    "creator": "Blanca",
+    "ratings": 4.8,
+    "price": 500
+  },
+  {
+    "id": 7,
+    "category": "Avatars",
+    "subCategory": "Robot & Cyborgs",
+    "name": "Zen-i Futuristic",
+    "image":"https://img.freepik.com/premium-photo/futuristic-scifi-3d-game-character-design-cyborg-robot-avatar-inspired-by-fortnite-star-wars_934871-10886.jpg",
+    "creator": "MechaMinds",
+    "ratings": 4.6,
+    "price": 399
+  },
+  {
+    "id": 8,
+    "category": "Avatars",
+    "subCategory": "Robot & Cyborgs",
+    "name": "Last Styleblender",
+    "image":"https://img.freepik.com/premium-photo/gaming-avatar-glowing-armor-futuristic-warrior-gamer-avatar-cyborg-background_569725-31083.jpg",
+    "creator": "Zipline Creation",
+    "ratings": 4.2,
+    "price": 899
+  },
+  {
+    "id": 9,
+    "category": "Avatars",
+    "subCategory": "Robot & Cyborgs",
+    "name": "Next Gen-A Model",
+    "image":"https://img.freepik.com/premium-photo/futuristic-scifi-3d-game-character-design-cyborg-robot-avatar-inspired-by-fortnite-star-wars_934871-9588.jpg",
+    "creator": "MechaMinds",
+    "ratings": 4.9,
+    "price": 233
+  },
+  {
+    "id": 10,
+    "category": "Avatars",
+    "subCategory": "Cyborgs",
+    "name": "Cyborg Armor",
+    "image":"https://img.freepik.com/premium-photo/cyborg-armor-avatar_914919-6.jpg",
+    "creator": "CyberWorlds",
+    "ratings": 4.2,
+    "price": 550
+  },
+  {
+    "id": 11,
+    "category": "Avatars",
+    "subCategory": "Cyborgs",
+    "name": "Sci-Fi Armor",
+    "image":"https://img.freepik.com/premium-photo/futuristic-scifi-3d-game-character-design-cyborg-robot-avatar-inspired-by-fortnite-star-wars_934871-9729.jpg",
+    "creator": "Ping Tree",
+    "ratings": 4.8,
+    "price": 559
+  },
+  {
+    "id": 12,
+    "category": "Fashion",
+    "subCategory": "Clothes",
+    "name": "Fashion 1",
+    "image": "https://static.zara.net/assets/public/2c0d/531d/ab79401da0c3/8d217e7af5fc/05933456251-p/05933456251-p.jpg?ts=1722954849498&w={width}",
+    "creator": "StyleGenix",
+    "ratings": 4.0,
+    "price": 200
+  },
+  {
+    "id": 13,
+    "category": "Fashion",
+    "subCategory": "Clothes",
+    "name": "Fashion 2",
+    "image": "https://static.zara.net/assets/public/aafe/1140/ca964f79b283/385a44e50426/04087429674-p/04087429674-p.jpg?ts=1719570736161&w=412",
+    "creator": "StyleGenix",
+    "ratings": 3.5,
+    "price": 499
+  },
+  {
+    "id": 14,
+    "category": "Fashion",
+    "subCategory": "Clothes",
+    "name": "Men's Striped Shirt",
+    "image":"https://static.zara.net/assets/public/6529/fbbb/d5164e08a03e/f105c6c782a9/05679310044-p/05679310044-p.jpg?ts=1720783695477&w=824",
+    "creator": "Zara",
+    "ratings": 2.5,
+    "price": 599
+  },
+  {
+    "id": 15,
+    "category": "Fashion",
+    "subCategory": "Clothes",
+    "name": "Fshion 4",
+    "image":"https://static.zara.net/assets/public/f798/dbf2/9cd24d68a676/3bffe8f9b1d3/04087429406-a1/04087429406-a1.jpg?ts=1719498191105&w=412",
+    "creator": "StyleGenix",
+    "ratings": 4.5,
+    "price": 990
+  },
+  {
+    "id": 16,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Intenso",
+    "image":"https://cdn11.bigcommerce.com/s-ilgxsy4t82/images/stencil/1280x1280/products/153820/373028/41KMBM_gg8L._SL1081___47193.1672055521.jpg?c=1&imbypass=on",
+    "creator": "Dolce & Gabbana",
+    "ratings": 4.1,
+    "price": 450
+  },
+  {
+    "id": 17,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Leather bag",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSZQ-E8Hu1Zaak7OA7EzNZu9R_oMm1Ia6Zg&s",
+    "creator": "Buffalo Jackson",
+    "ratings": 4.6,
+    "price": 250
+  },
+  {
+    "id": 18,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Espresso Leather Shoes",
+    "image":"https://baccabucci.com/cdn/shop/products/01-_MG_1052copy_1_cb23538c-dd97-4904-acf9-4a6ac26a7b06_1200x.jpg?v=1675413204",
+    "creator": "Bata",
+    "ratings": 4.9,
+    "price": 550
+  },
+  {
+    "id": 19,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Men's Wallet",
+    "image":"https://i.pinimg.com/736x/ff/e0/03/ffe003234e989aeddde4ec761b0e5b8f.jpg",
+    "creator": "TrendyGear",
+    "ratings": 4.6,
+    "price": 350
+  },
+  {
+    "id": 20,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Men's Watch",
+    "image":"https://manofmany.com/_next/image?url=https%3A%2F%2Fapi.manofmany.com%2Fwp-content%2Fuploads%2F2021%2F06%2FLuxury-Watch-Brands-Feature-Image.jpg&w=1200&q=75",
+    "creator": "Bombay Saigon",
+    "ratings": 4.6,
+    "price": 750
+  },
+  {
+    "id": 21,
+    "category": "Fashion",
+    "subCategory": "Others",
+    "name": "Customizable Backpack",
+    "image":"https://media.gucci.com/style/White_South_0_160_316x316/1713805319/792114_FADMF_9794_001_100_0000_Light.jpg",
+    "creator": "GearCraft",
+    "ratings": 4.4,
+    "price": 350
+  },
+  {
+    "id": 22,
+    "category": "Fashion",
+    "subCategory": "Accessories",
+    "name": "Ombre Nomade",
+    "image":"https://preview.redd.it/mens-cologne-recommendations-v0-5d8hs4dwq41c1.jpg?width=1080&crop=smart&auto=webp&s=f11a5dd9790850c3d7701952871c98c33c651631",
+    "creator": "Louis Vitton",
+    "ratings": 4.6,
+    "price": 650
+  },
+  {
+    "id": 23,
+    "category": "Fashion",
+    "subCategory": "Clothes",
+    "name": "Black Leather Jacket",
+    "image":"https://www.prada.com/content/dam/pradabkg_products/U/UPW/UPW491/14HEF0002/UPW491_14HE_F0002_S_OOO_SLF.jpg",
+    "creator": "Parada",
+    "ratings": 4.8,
+    "price": 120
+  }
+]
