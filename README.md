@@ -7,7 +7,7 @@
    a) ***Custom API*** 
 
 3.**Libraries**:
-   a) **UI kit**- **TailwindCss** (You can choose any Material UI or tailwind)
+   a) **UI kit**- **TailwindCss** 
    
 
 ## System Requirements
@@ -67,8 +67,6 @@ To set up a development environment locally, please follow these steps:
    
     ```shell
     npm run dev
-    ```
-
     ```
 
 ### Thank You !!!
