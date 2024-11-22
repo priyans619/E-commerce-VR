@@ -4,18 +4,25 @@ import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { CiGlobe } from "react-icons/ci";
 import { IoMdMenu } from "react-icons/io";
 import { MdAccountCircle } from "react-icons/md";
-import Image from 'next/image'
+import Image from "next/image";
 import Sidebar from "./Sidebar";
 
-const Header = ({ onCategorySelect, onSubCategorySelect }) => {
+const Header = ({ onCategorySelect, onSubCategorySelect, onSearch }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("");
   const [selectedSubCategory, setSelectedSubCategory] = useState("");
   const [showSidebar, setShowSidebar] = useState(false);
+  const [searchKeyword, setSearchKeyword] = useState("");
 
   const categories = {
     Avatars: ["Human-like", "Anthro & Furry", "Robot & Cyborgs", "Cyborgs", "All in Avatars"],
     Fashion: ["Clothes", "Accessories", "Others", "All in Fashion"],
+  };
+
+  const handleSearch = () => {
+    if (searchKeyword.trim()) {
+      onSearch(searchKeyword);
+    }
   };
 
   return (
@@ -33,6 +40,9 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
             type="text"
             className="flex-1 bg-transparent border-none focus:outline-none text-sm pl-4"
             placeholder="keywords"
+            value={searchKeyword}
+            onChange={(e) => setSearchKeyword(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()} 
           />
 
           <span className="mx-2 h-6 w-px bg-gray-800"></span>
@@ -77,9 +87,7 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
                         }}
                       >
                         <span>{category}</span>
-                        {categories[category] && (
-                          <span className="ml-12">›</span>
-                        )}
+                        {categories[category] && <span className="ml-12">›</span>}
                       </li>
                     ))}
                   </ul>
@@ -110,7 +118,10 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
           </div>
 
           {/* Search Icon */}
-          <button className="flex items-center justify-center bg-[#CA323D] text-gray-600 h-10 w-10 rounded-full mr-1">
+          <button
+            className="flex items-center justify-center bg-[#CA323D] text-gray-600 h-10 w-10 rounded-full mr-1"
+            onClick={handleSearch}
+          >
             <FiSearch className="text-[#F1F1F1] text-2xl" />
           </button>
         </div>
@@ -162,6 +173,5 @@ const Header = ({ onCategorySelect, onSubCategorySelect }) => {
     </nav>
   );
 };
-
 
 export default Header;
