@@ -2,20 +2,26 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import products from "../data/products.json";
 
-const ProductGrid = ({ selectedCategory, selectedSubCategory }) => {
-  // Filtering the products based on selected category and subcategory
+const ProductGrid = ({ selectedCategory, selectedSubCategory, searchKeyword }) => {
+
+  // Filtering  products by selected category, subcategory, and search keyword
   const filteredProducts = products.filter((product) => {
     const categoryMatch =
       !selectedCategory || selectedCategory === "All" || product.category === selectedCategory;
 
-    const subCategoryMatch = 
-      !selectedSubCategory ||
-      selectedSubCategory === "All" || //showing all subcategories in selected category
+    const subCategoryMatch =
+      !selectedSubCategory || //only for subcategory
+      selectedSubCategory === "All" || 
       selectedSubCategory === "All in Avatars" ||
       selectedSubCategory === "All in Fashion" ||
       product.subCategory === selectedSubCategory;
 
-    return categoryMatch && subCategoryMatch;
+    const searchMatch =
+      !searchKeyword ||
+      product.name.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+      product.subCategory.toLowerCase().includes(searchKeyword.toLowerCase());
+
+    return categoryMatch && subCategoryMatch && searchMatch;
   });
 
   return (
